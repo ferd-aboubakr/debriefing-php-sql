@@ -1,3 +1,8 @@
+
+<?php 
+require_once 'database.php';
+getconnection();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

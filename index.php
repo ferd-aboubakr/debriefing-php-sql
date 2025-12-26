@@ -1,3 +1,18 @@
+<?php
+require_once 'database.php';
+$pdo = getconnection();
+var_dump($pdo);
+$sql ="SELECT * from etudiants";
+$query->execute($sql);
+$results = $query->setFetchMode(PDO::FETCH_ASSOC);
+foreach ($results as $key => $value){
+echo "$key: $value";
+}
+// Select nom, id, classe, email from etudiants;
+// Select note from notes order by ASC limit 1;
+// select note from notes order bu DESC limit 1;
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
